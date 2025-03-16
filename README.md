@@ -88,4 +88,8 @@ python scheduler.py
 # 設計決策與假設
 -	預約貼文存放於 scheduled_posts 資料表，欄位包括 id、content、posted、is_posted、user_id
 -	當時間達到 posted 時，scheduler.py 將自動檢查並將貼文移至 posts 資料表，同時更新 is_posted 為 TRUE
+-	關於時間軸設計：
+時間軸的設計假設會從 posts 資料表撈取資料，顯示所有已發佈噗文。
+預約噗文在發佈時間到達時，會由 scheduler.py 插入到 posts 資料表，意味著其他用戶在瀏覽時間軸時，會自動看到該預約噗文，無需額外操作。
+此設計確保時間軸僅顯示已發佈內容，且不需特別為預約噗文設計額外的查詢邏輯。
 
