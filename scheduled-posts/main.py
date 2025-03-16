@@ -25,6 +25,7 @@ class ScheduledPost(BaseModel):
     posted: datetime
     user_id: int
 
+
 # 新增噗文功能
 @app.post("/api/scheduled_posts")
 async def create_scheduled_post(post: ScheduledPost):
