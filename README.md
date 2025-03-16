@@ -81,9 +81,8 @@ python scheduler.py
 # 測試說明
 ## 測試排程功能
 ### 執行以下指令，每隔 60 秒會檢查是否有需要發佈的貼文
-
+```
 python scheduler.py
-
 ```
 
 # 設計決策與假設
