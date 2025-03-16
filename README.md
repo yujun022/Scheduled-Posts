@@ -12,11 +12,11 @@
 pip install -r requirements.txt
 ```
 ## 3. 設定環境變數
-請在專案根目錄建立 ```bash .env``` 檔案，內容如下：
+請在專案根目錄建立 .env 檔案，可參考已提供的 .env.example 檔案，內容格式如下
 ```bash
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=你的密碼
+DB_PASSWORD=
 DB_NAME=plurk
 ```
 ## 4. 建立資料庫
